@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameris Bank - User Deposit Activity</title>
+    <link rel="stylesheet" href="Ameris-user-deposit-activity-design.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">AMERIS BANK</div>
+            <nav>
+                <a href="Ameris-user-account-dashboard.html">Accounts</a>
+                <a href="Ameris-user-deposit-dashboard.html"  class="active">Deposit</a>
+                <a href="Ameris-user-withdraw-dashboard.html">Withdraw</a>
+            </nav>
+            <div class="sign-out">
+                <a href="index.html">Sign Out</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bill-pay-container">
+            <h1>Deposit</h1>
+            <nav class="tabs">
+                <a href="Ameris-user-deposit-dashboard.html">Make a deposit</a>
+                <a href="Ameris-user-deposit-activity.html" class="active">Activity</a>
+            </nav>
+
+ 
+        <!-- Page Wrapper -->
+        <div class="container">
+            <!-- Header -->
+            <div class="head">
+                <h1>Deposit History</h1>
+                <div class="filter-section">
+                    <input type="text" id="date-range" placeholder="07/01/2025 - 07/02/2025">
+                    <a href="Ameris-user-deposit-activity.html">
+                    <button class="refresh-btn"><i class="fas fa-sync-alt"></i></button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <!-- Table Section -->
+            <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Payment method</th>
+                    <th>Amount</th>
+                </tr>
+                </thead>
+                <tbody id="table-body">
+                <!-- Sample Rows -->
+                <tr>
+                    <td>07/01/2025</td>
+                    <td>11:03 AM</td>
+                    <td>Card ending in 5224</td>
+                    <td>500</td>
+                </tr>
+                <!-- More rows dynamically populated -->
+                </tbody>
+            </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+            <span>1 to 1 of 1</span>
+            <button>&laquo; Previous</button>
+            <button>1</button>
+            <button>Next &raquo;</button>
+            </div>
+        </div>
+
+ 
+
+        </div>
+    </main>
+    <script src="Ameris-user-deposit-activity-js.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyC6jnc3iJhgNpkyRkIJsiJ8pJbtRYznna8",
+          authDomain: "ameris-bank-b9f6a.firebaseapp.com",
+          projectId: "ameris-bank-b9f6a",
+          storageBucket: "ameris-bank-b9f6a.firebasestorage.app",
+          messagingSenderId: "796415015356",
+          appId: "1:796415015356:web:084cc0c08f50a8164893b9"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body>
+</html>

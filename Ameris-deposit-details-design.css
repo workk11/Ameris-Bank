@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2, h5 {
+    color: #002855;
+    margin-bottom: 10px;
+}
+
+
+  
+  /* Payment Container */
+  .payment-container {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(236, 235, 235);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+ 
+  
+  /* Payment Options */
+  .payment-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+  }
+  
+  .payment-option.selected {
+    border-color: #ecf0f3 #e9ecf1;
+    background: #e7f1ff;
+  }
+  
+  .payment-option:hover {
+    background: #f1f1f1;
+  }
+  
+  .option-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .payment-logo {
+    width: 35px;
+    height: auto;
+  }
+  
+  .paypal-icon {
+    font-size: 2rem;
+    color: #003087;
+  }
+  
+  .card-number, .email {
+    font-weight: bold;
+  }
+  
+  .card-holder, .expiry {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Add Payment */
+  .add-payment {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .add-payment-link {
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #002855;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-payment-link i {
+    font-size: 1rem;
+  }
+  
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.btn-primary {
+    background-color: #002855;
+    color: white;
+}
+
+
+button {
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar, .tabs {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+}

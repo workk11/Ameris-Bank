@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameris Bank - User Deposit Dashboard</title>
+    <link rel="stylesheet" href="Ameris-user-deposit-dashboard-design.css">
+    <script src="Ameris-user-deposit-dashboard-js.js" defer></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">AMERIS BANK</div>
+            <nav>
+                <a href="Ameris-user-account-dashboard.html">Accounts</a>
+                <a href="Ameris-user-deposit-dashboard.html"  class="active">Deposit</a>
+                <a href="Ameris-user-withdraw-dashboard.html">Withdraw</a>
+            </nav>
+            <div class="sign-out">
+                <a href="index.html">Sign Out</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bill-pay-container">
+            <h1>Deposit</h1>
+            <nav class="tabs">
+                <a href="Ameris-user-deposit-dashboard.html" class="active">Make a deposit</a>
+                <a href="Ameris-user-deposit-activity.html">Activity</a>
+            </nav>
+
+            <div class="section">
+                <h2>Upcoming Deposit (After 30 Days)</h2>
+            </div>
+
+            <div class="section payees">
+                  <!-- Payment Options Container -->
+                  <div class="payment-container">
+                    <h2>Deposit method</h2>
+                    <form id="payment-form">
+                
+                    <!-- VISA Option -->
+                    <div class="payment-option">
+                      <div class="option-details">
+                        <input type="radio" id="credit-card" name="payment" value="credit-card">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa Logo" class="payment-logo">
+                          <span class="card-number">••5224</span>
+                          <span class="card-holder">Sig Gabriel</span>
+                          <span class="expiry">02/2026</span>
+                      </div>
+                    </div>
+                
+                    
+                    <!-- PayPal Option -->
+                    <!--
+                    <div class="payment-option">
+                      <div class="option-details">
+                        <input type="radio" id="paypal" name="payment" value="paypal">
+                        <i class="fab fa-paypal payment-logo paypal-icon"></i>
+                        <span class="email">janetvanderbloom@outlook.com</span>
+                      </div>
+                    </div>
+                    -->
+                    <!-- Bank Option -->
+                    <!--
+                    <div class="payment-option">
+                      <div class="option-details">
+                        <input type="radio" id="crypto" name="payment" value="crypto">
+                        <i class="fa fa-bank payment-logo paypal-icon"></i>
+                        <span class="email">janetvanderbloom@outlook.com</span>
+                      </div>
+                    </div>
+                    -->
+
+                    <!-- Add Another Option -->
+                    <div class="add-payment">
+                      <a href="Ameris-add-deposit-method.html" class="add-payment-link">
+                        <i class="fas fa-plus-circle"></i> Choose a different way to deposit
+                      </a>
+                    </div>
+                  </div>
+            
+                <div class="buttons">
+                    <button class="btn-secondary" id="proceed-button" disabled>Edit Details</button>
+                    <button class="btn-danger" id="delete-button" disabled>Delete</button>
+                  </form>
+                    <a href="Ameris-deposit-details.html" class="add-payment-link">
+                      <button class="btn-primary">Make a deposit</button>
+                    </a>
+                     
+                      
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyC6jnc3iJhgNpkyRkIJsiJ8pJbtRYznna8",
+        authDomain: "ameris-bank-b9f6a.firebaseapp.com",
+        projectId: "ameris-bank-b9f6a",
+        storageBucket: "ameris-bank-b9f6a.firebasestorage.app",
+        messagingSenderId: "796415015356",
+        appId: "1:796415015356:web:084cc0c08f50a8164893b9"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>

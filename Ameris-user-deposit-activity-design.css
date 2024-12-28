@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #002855;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    margin-right: 180px;
+    font-size: 1rem;
+}
+
+.navbar nav a.active {
+    border-bottom: 2px solid #fdb913;
+}
+
+.sign-out a {
+    margin-right: 10px;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #002855;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+.tabs a.active {
+    border-bottom: 2px solid #002855;
+    font-weight: bold;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+
+  
+  /* Container */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Header */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+  
+.head h1 {
+    font-size: 1.5rem;
+    color: #444;
+}
+  
+.filter-section {
+    display: flex;
+    gap: 10px;
+}
+  
+.filter-section input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.refresh-btn {
+    padding: 0.5rem 0.7rem;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+  /* Action Buttons */
+
+  
+  /* Table */
+.table-wrapper {
+    overflow-x: auto;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+table th, table td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+  
+table th {
+    background: #0056b3;
+    color: white;
+    font-weight: bold;
+}
+  
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+.pagination {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.pagination button {
+    padding: 0.5rem;
+    margin: 0 5px;
+    border: none;
+    background: #0056b3;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+
+
+
+@media screen and (max-width: 600px) {
+    .navbar, .tabs {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+}

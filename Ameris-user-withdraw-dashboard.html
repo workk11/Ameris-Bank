@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameris Bank - User Withdraw Dashboard</title>
+    <link rel="stylesheet" href="Ameris-user-withdraw-dashboard-design.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">AMERIS BANK</div>
+            <nav>
+                <a href="Ameris-user-account-dashboard.html">Accounts</a>
+                <a href="Ameris-user-deposit-dashboard.html">Deposit</a>
+                <a href="Ameris-user-withdraw-dashboard.html" class="active">Withdraw</a>
+            </nav>
+            <div class="sign-out">
+                <a href="index.html">Sign Out</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="bill-pay-container">
+            <h2>Widthdrawal</h2>
+        <!--<form id="sign-in-form">-->
+        <form id="withdrawal-form">
+            <div class="input-group">
+                <label for="user-id">User ID</label>
+                <input type="text" id="user-id" placeholder="Enter your User ID" required>
+            </div>
+            <div class="input-group">
+                <label for="security-code">One-Time Security Code</label>
+                <input type="text" id="security-code" placeholder="Enter Code" required>
+            </div>
+            <div class="input-group">
+                <label for="withdraw-amount">Withdrawal Amount</label>
+                <!--<input type="number" id="security-code" placeholder=">$30,000.00" required>-->
+                <input type="number" id="withdraw-amount" name="withdraw-amount" placeholder="Minimum Withdrawal Amount $17,000.00" required>
+            </div> 
+            <div class="form-buttons">
+                <button type="submit" class="btn-primary">Continue with Security Code</button>
+                <button type="button" class="btn-secondary" id="cancel-btn">Cancel</button>
+            </div>
+        </form>
+        <a href="Ameris-user-withdraw-dashboard.html" class="alternate">Use a different User ID</a>
+        <p id="error-message" class="error-message"></p>
+        </div>
+    </main>
+    <script src="Ameris-user-withdraw-dashboard-js.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyC6jnc3iJhgNpkyRkIJsiJ8pJbtRYznna8",
+          authDomain: "ameris-bank-b9f6a.firebaseapp.com",
+          projectId: "ameris-bank-b9f6a",
+          storageBucket: "ameris-bank-b9f6a.firebasestorage.app",
+          messagingSenderId: "796415015356",
+          appId: "1:796415015356:web:084cc0c08f50a8164893b9"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body>
+</html>
+

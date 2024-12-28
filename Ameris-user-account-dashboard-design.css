@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #002855;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    margin-right: 180px;
+    font-size: 1rem;
+}
+
+.navbar nav a.active {
+    border-bottom: 2px solid #fdb913;
+}
+
+.sign-out a {
+    margin-right: 10px;
+    color: white;
+}
+
+/* Account Balance Section */
+.account-balance {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.balance-card {
+    background-color: #f0f4ff;
+    border: 1px solid #d0d8ff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.balance-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2a4dff;
+}
+
+.amount span {
+    font-size: 0.9rem;
+}
+
+
+/* Transactions Section */
+.transactions {
+    margin-top: 1rem;
+}
+
+.transactions-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.transactions-header label {
+    margin-left: 63rem;
+}
+
+select {
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+th {
+    background-color: #2a4dff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.credit {
+    color: green;
+    font-weight: bold;
+}
+
+.debit {
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .account-balance {
+        flex-direction: column;
+    }
+
+    .balance-card, .add-account button {
+        margin-bottom: 1rem;
+        width: 80%;
+    }
+}

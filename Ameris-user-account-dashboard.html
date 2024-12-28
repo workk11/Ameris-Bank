@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameris Bank - User Account Dashboard</title>
+    <link rel="stylesheet" href="Ameris-user-account-dashboard-design.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">AMERIS BANK</div>
+            <nav>
+                <a href="Ameris-user-account-dashboard.html"  class="active">Accounts</a>
+                <a href="Ameris-user-deposit-dashboard.html">Deposit</a>
+                <a href="Ameris-user-withdraw-dashboard.html">Withdraw</a>
+            </nav>
+            <div class="sign-out">
+                <a href="index.html">Sign Out</a>
+            </div>
+        </div>
+    </header>
+            <!-- Account Balance Section -->
+            <section class="account-balance">
+                <div class="balance-card">
+                    <h3>Current Account</h3>
+                    <p class="amount">0 <span>USD</span></p>
+                </div>
+                <div class="balance-card">
+                    <h3>Savings Account</h3>
+                    <p class="amount">500 <span>USD</span></p>
+                </div>
+            </section>
+    
+            <!-- Transactions Section -->
+            <section class="transactions">
+                <div class="transactions-header">
+                    <h3>Transactions</h3>
+                    <label for="filter">Filter by:</label>
+                    <select id="filter">
+                        <option value="all">All</option>
+                        <option value="credit">Credit</option>
+                        <option value="debit">Debit</option>
+                    </select>
+                </div>
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Date</th>
+                            <th>Details</th>
+                            <th>Amount</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transaction-table">
+                        <tr>
+                            <td class="credit">Credit</td>
+                            <td>07/01</td>
+                            <td>Card Deposit</td>
+                            <td>+500 USD</td>
+                            <td>500 USD</td>
+                        </tr>
+                        <!--
+                        <tr>
+                            <td class="debit">Debit</td>
+                            <td>05/10</td>
+                            <td>Withdrawal</td>
+                            <td>-1,000 USD</td>
+                            <td>7,000 USD</td>
+                        </tr>
+                        <tr>
+                            <td class="credit">Credit</td>
+                            <td>05/08</td>
+                            <td>Salary</td>
+                            <td>+4,000 USD</td>
+                            <td>8,000 USD</td>
+                        </tr>
+                        <tr>
+                            <td class="debit">Debit</td>
+                            <td>05/01</td>
+                            <td>Electricity Bill</td>
+                            <td>-200 USD</td>
+                            <td>4,000 USD</td>
+                        </tr>
+                        -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    
+    <script src="Ameris-user-account-dashboard-js.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyC6jnc3iJhgNpkyRkIJsiJ8pJbtRYznna8",
+          authDomain: "ameris-bank-b9f6a.firebaseapp.com",
+          projectId: "ameris-bank-b9f6a",
+          storageBucket: "ameris-bank-b9f6a.firebasestorage.app",
+          messagingSenderId: "796415015356",
+          appId: "1:796415015356:web:084cc0c08f50a8164893b9"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body>
+</html>

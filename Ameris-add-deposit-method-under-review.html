@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Received</title>
+  <link rel="stylesheet" href="Ameris-add-deposit-method-under-review-design.css">
+  <script src="Ameris-add-deposit-method-under-review-js.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="review-container">
+    <header>
+      <h1>Deposit method under review</h1>
+    </header>
+    <main>
+      <div class="icon">
+        <i class="fas fa-file-alt"></i>
+      </div>
+      <p>
+        Your details has been submitted and is under review!
+      </p>
+      <p>
+        We'll let you know when it's done, or if we need any additional information from you by sending an email to 
+        <span class="highlight">info@ameris.com</span>.
+      </p>
+      <a href="Ameris-user-account-dashboard.html" class="add-payment-link">
+        <button id="home-button">Go Back to Dashboard</button>  
+      </a>
+    </main>
+    <!--
+    <footer>
+      <nav>
+        <a href="#">Docs</a>
+        <a href="#">Community</a>
+        <a href="#">Updates</a>
+        <a href="#">Support</a>
+      </nav>
+    </footer>
+    -->
+  </div>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyC6jnc3iJhgNpkyRkIJsiJ8pJbtRYznna8",
+      authDomain: "ameris-bank-b9f6a.firebaseapp.com",
+      projectId: "ameris-bank-b9f6a",
+      storageBucket: "ameris-bank-b9f6a.firebasestorage.app",
+      messagingSenderId: "796415015356",
+      appId: "1:796415015356:web:084cc0c08f50a8164893b9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>

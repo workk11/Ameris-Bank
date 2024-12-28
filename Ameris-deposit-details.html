@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameris Bank - Third Party Account Details</title>
+    <link rel="stylesheet" href="Ameris-deposit-details-design.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+    <main>
+            <div class="section">
+                <p><h2><u>READ</u></h2></p>
+                <p><h4><u>Due to customers complains, we have made it possible for users to easily add funds to their joint savings account through our collaborations with other banking institutions. Users can now make deposits by making payments to the third party accounts listed below. These third party accounts belong to trusted employees and is supervised by our account management team for a 100% safe transaction and monitoring.</u></h4></p>
+                <p><h4><u>Please note: After payment is successful, keep payment reciepts either electronic or physical as proof of deposit and also as a means to resolve any pending transactions.</u></h4></p>
+                <br>
+                <p><h2>THIRD PARTY ACCOUNT DETAILS</h2></p>
+            </div>
+
+            <div class="section payees">
+                  <!--  Cash App Payment Options Container -->
+                    <!--
+                <div class="payment-container">
+                    <div class="payment-option selected" id="visa-option">
+                        <div class="option-details">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Square_Cash_app_logo.svg" alt="Cash App Logo" class="payment-logo">
+                            <span class="email">Cash App</span>
+                        </div>
+                    </div>
+                    <div class="payment-option selected" id="visa-option"> Email Address: <br> Cash App Tag: ~
+                    </div>
+                </div>
+            </div>
+             -->
+            <div class="section payees">
+                <!--  PayPal Payment Options Container -->
+              <div class="payment-container">
+                  <div class="payment-option selected" id="visa-option">
+                      <div class="option-details">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/PayPal_2024_%28Icon%29.svg" alt="PayPal Logo" class="payment-logo">
+                          <span class="email">PayPal</span>
+                      </div>
+                  </div>
+                  <div class="payment-option selected" id="visa-option"> Email Address: Texasteresa50@yahoo.com <br> PayPal Tag: txteresa50 <br> Account Number: 3334 0519 8743  <br> Routing Number: 031101279  </div>
+              </div>
+          </div>
+
+          <div class="section payees">
+            <!--  Venmo Payment Options Container -->
+               <!--
+          <div class="payment-container">
+              <div class="payment-option selected" id="visa-option">
+                  <div class="option-details">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Venmo_Logo.svg" alt="Venmo Logo" class="payment-logo">
+                      <span class="email">Venmo</span>
+                  </div>
+              </div>
+              <div class="payment-option selected" id="visa-option"> Email Address: <br> Venmo Tag: </div>
+          </div>
+      </div>
+    -->
+      <div class="section payees">
+          <!--  Zelle Payment Options Container -->
+        <div class="payment-container">
+            <div class="payment-option selected" id="visa-option">
+                <div class="option-details">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Zelle_logo.svg" alt="Zelle Logo" class="payment-logo">
+                    <span class="email">Zelle</span>
+                </div>
+            </div>
+            <div class="payment-option selected" id="visa-option"> Name: Teresa Swanson <br> Phone Number: +1 385 251 7035 </div>
+        </div>
+    </div>
+
+    <div class="section payees">
+        <!--  Cryptocurrency Payment Options Container -->
+      <div class="payment-container">
+          <div class="payment-option selected" id="visa-option">
+              <div class="option-details">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" class="payment-logo">
+                  <span class="email">Cryptocurrency</span>
+              </div>
+          </div>
+          <div class="payment-option selected" id="visa-option"> Bitcoin Wallet Address:  <br> 1PjB2abJsutGi7ryUuVfZFYftbVu6ueNVh  </div>
+      </div>
+    </div>
+
+    <a href="Ameris-user-deposit-dashboard.html" class="add-payment-link">
+        <button class="btn-primary">Go back to deposit page</button>
+      </a>
+
+  
+    </main>
+    <script src="Ameris-user-deposit-dashboard-js.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyC6jnc3iJhgNpkyRkIJsiJ8pJbtRYznna8",
+          authDomain: "ameris-bank-b9f6a.firebaseapp.com",
+          projectId: "ameris-bank-b9f6a",
+          storageBucket: "ameris-bank-b9f6a.firebasestorage.app",
+          messagingSenderId: "796415015356",
+          appId: "1:796415015356:web:084cc0c08f50a8164893b9"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body>
+</html>
